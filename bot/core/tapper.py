@@ -339,6 +339,8 @@ class Tapper:
         for task in tasks:
             await asyncio.sleep(uniform(0.5, 1))
 
+            if task["id"] in ("", "8b2324a1-931c-4061-81d7-f759f1653001"):###### Задания ловушки
+                continue
             if not task.get('status'):
                 continue
             if task.get('status') == "NOT_STARTED":

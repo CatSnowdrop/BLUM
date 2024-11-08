@@ -1,0 +1,3 @@
+scheme://username:password@host:port
+scheme://username:password:host:port
+scheme://host:port
